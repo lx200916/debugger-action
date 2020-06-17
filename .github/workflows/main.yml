@@ -1,24 +1,10 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
-
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
+name: Ubuntu
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
   watch:
-    types: [started]
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+    types: started
 jobs:
-  # This workflow contains a single job called "build"
- build:
-   runs-on: 
-      using: 'node12'
-      main: 'action.js'
-      
-    # The type of runner that the job will run on
-    
+  Ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+    - name: SSH connection to Actions
+      uses: P3TERX/debugger-action@master
