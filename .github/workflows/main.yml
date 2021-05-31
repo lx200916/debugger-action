@@ -6,11 +6,5 @@ jobs:
   Ubuntu:
     runs-on: ubuntu-latest
     steps:
-    
-
-  
-    - uses: actions/checkout@v2
-      with:
-          repository: 'Midnight-Neon/Python_Backend'
     - name: SSH connection to Actions
       uses: csexton/debugger-action@master
