@@ -7,9 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-    - uses: actions/checkout@v2
-      with:
-          repository: 'Midnight-Neon/Game-Server'
+
   
     - uses: actions/checkout@v2
       with:
